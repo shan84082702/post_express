@@ -1,0 +1,130 @@
+{
+	"info": {
+		"_postman_id": "d51f005b-f62d-4c09-8007-4b00c6ff7584",
+		"name": "post_express",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "7108139"
+	},
+	"item": [
+		{
+			"name": "取得所有貼文",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://post-express.onrender.com/posts",
+					"protocol": "https",
+					"host": [
+						"post-express",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"posts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "刪除所有貼文",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://post-express.onrender.com/posts",
+					"protocol": "https",
+					"host": [
+						"post-express",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"posts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "新增單筆貼文",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"小明\",\r\n    \"content\":\"天氣變冷了\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://post-express.onrender.com/posts",
+					"protocol": "https",
+					"host": [
+						"post-express",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"posts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "刪除單一貼文",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://post-express.onrender.com/posts/6656a1d4b19fbd5e72942fba",
+					"protocol": "https",
+					"host": [
+						"post-express",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"posts",
+						"6656a1d4b19fbd5e72942fba"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "修改單一貼文",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"小明\",\r\n    \"content\":\"北京烤鴨!!!\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://post-express.onrender.com/posts/6656a218b19fbd5e72942fbe",
+					"protocol": "https",
+					"host": [
+						"post-express",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"posts",
+						"6656a218b19fbd5e72942fbe"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
